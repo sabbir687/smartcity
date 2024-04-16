@@ -1,0 +1,92 @@
+.body1{
+   width: 100%;
+   height: 40vh;
+    margin-top: 20%;
+    background:url(dhaka.1.jpg) no-repeat;
+    background-size: cover;
+    margin-left: 150px;
+    animation: body 3.02s forwards;
+    
+}
+.moon{
+    width: 100px;
+    height: 100px;
+    position: relative;
+     border-radius: 50%;
+
+}
+.moon::before{
+    content: "";
+    background-color: rgb(184, 179, 179);
+   
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    animation: moon 3.02s  linear forwards ;
+    opacity: 0;
+}
+@keyframes moon {
+    0%{
+        transform: translateY(0)scale(1);
+        box-shadow: none;
+        opacity: 0;
+        
+    }
+    20%{
+        transform: translateY(-60px)scale(1.2);
+        box-shadow: none;
+        opacity: .1; 
+    }
+    40%{
+        transform: translateY(-120px)scale(1.4);
+        box-shadow: none;
+        opacity: .2;
+    }
+    60%{
+        transform: translateY(-180px)scale(1.6);
+        box-shadow: 0 0 8px white;
+        opacity: .5;
+    }
+    80%{
+        transform: translateY(-240px)scale(1.8);
+        box-shadow: 0 0 15px white;
+        opacity: .8;
+    }
+    100%{
+        transform: translateY(-300px)scale(2);
+        box-shadow: 0 0 24px white;
+        opacity: 1;
+        
+    }
+   
+}
+@keyframes body {
+    0%{
+       
+        opacity: 0;
+        
+    }
+    20%{
+        
+        opacity: .1; 
+    }
+    40%{
+        
+        opacity: .2;
+    }
+    60%{
+        
+        opacity: .5;
+    }
+    80%{
+       
+        opacity: .8;
+    }
+    100%{
+        
+        opacity: 1;
+        
+    }
+}
